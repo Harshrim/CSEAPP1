@@ -1,5 +1,6 @@
 package com.example.harshrimpardal.cseapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -15,6 +16,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -29,6 +32,8 @@ public class Home extends AppCompatActivity
     private static final Integer[] imgSlide= {R.drawable.pic1,R.drawable.pic2};
     private ArrayList<Integer> imgArray = new ArrayList<Integer>();
 
+    private FirebaseAuth firebaseAuth;
+
    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +45,7 @@ public class Home extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Replace", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -125,16 +130,27 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_cal) {
             // Handle the camera action
+            Intent intent= new Intent(Home.this,Contact.class);
+            startActivity(intent);
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        }else if (id == R.id.nav_events) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_assign) {
 
-        } 
-        else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_result) {
+
+        } else if (id == R.id.nav_place) {
+
+        }else if (id == R.id.nav_signin) {
+            Intent intent=new Intent(Home.this,Login.class);
+            startActivity(intent);
+
+        } else if (id == R.id.nav_contact) {
+            Intent intent=new Intent(Home.this,Contact.class);
+            startActivity(intent);
 
         }
 
