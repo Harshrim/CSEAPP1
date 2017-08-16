@@ -3,7 +3,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_cal"
             android:icon="@drawable/ic_menu_camera"
             android:title="Calendar" />
         <item
@@ -11,29 +11,35 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Gallery" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_events"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Events" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_assign"
             android:icon="@drawable/ic_menu_manage"
             android:title="Assignments" />
 
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_result"
             android:icon="@drawable/ic_menu_manage"
             android:title="Result Analysis" />
 
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_place"
             android:icon="@drawable/ic_menu_manage"
             android:title="Placements" />
     </group>
 
     <item android:title="Communicate">
         <menu>
+
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_signin"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sign In" />
+
+            <item
+                android:id="@+id/nav_contact"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Contact Us" />
         </menu>

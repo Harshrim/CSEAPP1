@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harshrimpardal.cseapp.Login">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="net.simplifiedcoding.firebaseauthdemo.MainActivity"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--<TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="User Registration"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+                -->
+            <EditText
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:textColor="@color/colorHint"
+                android:textColorHint="@color/colorHint"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Enter email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:textColor="@color/colorHint"
+                android:textColorHint="@color/colorHint"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Enter password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:textColor="@color/colorHint"
+                android:background="#000"
+                android:id="@+id/buttonSignup"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:text="Signup" />
+
+            <TextView
+                android:textSize="18dp"
+                android:text="Already Registered?"
+                android:id="@+id/textViewSignin"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
