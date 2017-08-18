@@ -34,12 +34,14 @@ public class Home extends AppCompatActivity
 
     private FirebaseAuth firebaseAuth;
 
-   @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        firebaseAuth=FirebaseAuth.getInstance();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -52,15 +54,15 @@ public class Home extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-            this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-       //new
-           init();
-       }
+        //new
+        init();
+    }
 
     private void init() {
         for(int i=0;i<imgSlide.length;i++)
@@ -90,7 +92,7 @@ public class Home extends AppCompatActivity
         }, 2500, 2500);
     }
 
-        //new end
+    //new end
 
     @Override
     public void onBackPressed() {
@@ -132,8 +134,7 @@ public class Home extends AppCompatActivity
 
         if (id == R.id.nav_cal) {
             // Handle the camera action
-            Intent intent= new Intent(Home.this,Contact.class);
-            startActivity(intent);
+
         } else if (id == R.id.nav_gallery) {
 
         }else if (id == R.id.nav_events) {
@@ -144,13 +145,12 @@ public class Home extends AppCompatActivity
 
         } else if (id == R.id.nav_place) {
 
-        }else if (id == R.id.nav_signin) {
-            Intent intent=new Intent(Home.this,Login.class);
-            startActivity(intent);
+        }else if (id == R.id.nav_signout) {
+            firebaseAuth.signOut();
+            finish();
+            startActivity(new Intent(this,LoginActivity.class));
 
         } else if (id == R.id.nav_contact) {
-            Intent intent=new Intent(Home.this,Contact.class);
-            startActivity(intent);
 
         }
 
