@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_cal"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_event_available_black_24dp"
             android:title="Calendar" />
         <item
             android:id="@+id/nav_gallery"
@@ -12,21 +12,16 @@
             android:title="Gallery" />
         <item
             android:id="@+id/nav_events"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_place_black_24dp"
             android:title="Events" />
         <item
             android:id="@+id/nav_assign"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
             android:title="Assignments" />
 
-        <item
-            android:id="@+id/nav_result"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Result Analysis" />
-
-        <item
+                <item
             android:id="@+id/nav_place"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_attach_money_black_24dp"
             android:title="Placements" />
     </group>
 
@@ -35,7 +30,7 @@
 
             <item
                 android:id="@+id/nav_signout"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
                 android:title="Sign Out" />
 
             <item

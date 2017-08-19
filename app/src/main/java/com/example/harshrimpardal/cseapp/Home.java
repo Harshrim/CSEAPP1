@@ -120,7 +120,9 @@ public class Home extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            firebaseAuth.signOut();
+            finish();
+            startActivity(new Intent(this,LoginActivity.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -133,15 +135,13 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_cal) {
-            // Handle the camera action
+            // Handle the calendar action
 
         } else if (id == R.id.nav_gallery) {
 
         }else if (id == R.id.nav_events) {
 
         } else if (id == R.id.nav_assign) {
-
-        } else if (id == R.id.nav_result) {
 
         } else if (id == R.id.nav_place) {
 
