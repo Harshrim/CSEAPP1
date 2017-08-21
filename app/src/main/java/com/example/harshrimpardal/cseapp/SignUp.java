@@ -1,5 +1,6 @@
 package com.example.harshrimpardal.cseapp;
 
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -17,7 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Login extends AppCompatActivity implements View.OnClickListener {
+public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     //defining view objects
     private EditText editTextEmail;
@@ -35,7 +36,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_sign_up);
 
         //initializing firebase auth object
         firebaseAuth = FirebaseAuth.getInstance();
@@ -47,7 +48,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             finish();
 
             //and open profile activity
-            startActivity(new Intent(getApplicationContext(), Home.class)); //ProfileActivity
+            startActivity(new Intent(getApplicationContext(), Home.class));
         }
 
         //initializing views
@@ -95,10 +96,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                         //checking if success
                         if(task.isSuccessful()){
                             finish();
-                            startActivity(new Intent(getApplicationContext(), Home.class)); //ProfileActivity
+                            startActivity(new Intent(getApplicationContext(), Home.class));
                         }else{
                             //display some message here
-                            Toast.makeText(Login.this,"Registration Error",Toast.LENGTH_LONG).show();
+                            Toast.makeText(SignUp.this,"Registration Error",Toast.LENGTH_LONG).show();
                         }
                         progressDialog.dismiss();
                     }
@@ -115,7 +116,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
         if(view == textViewSignin){
             //open login activity when user taps on the already registered textview
-            startActivity(new Intent(this, LoginExisting.class));
+            startActivity(new Intent(this, LoginActivity.class));
         }
 
     }
