@@ -3,7 +3,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="forgot">We just need your email to send you the password reset link</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">Home</string>
 </resources>
