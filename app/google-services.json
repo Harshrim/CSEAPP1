@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "909098202458",
-    "firebase_url": "https://cse-dsatm.firebaseio.com",
-    "project_id": "cse-dsatm",
-    "storage_bucket": "cse-dsatm.appspot.com"
+    "project_number": "457246676052",
+    "firebase_url": "https://dsatm-cse-b7cc0.firebaseio.com",
+    "project_id": "dsatm-cse-b7cc0",
+    "storage_bucket": "dsatm-cse-b7cc0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:909098202458:android:65ed681af5fc9687",
+        "mobilesdk_app_id": "1:457246676052:android:65ed681af5fc9687",
         "android_client_info": {
           "package_name": "com.example.harshrimpardal.cseapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "909098202458-c3sqk3tgjecp14oqna6rqhul4638i2v3.apps.googleusercontent.com",
+          "client_id": "457246676052-tmpq1n49nhkaqghuh0bmjjo30hfj4od2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDY7cvAjUf0tbGvD9uYiai6aoJp2cKyHps"
+          "current_key": "AIzaSyA47UwB8UsnxqfVnRqYPwm5BXHlys4a_b8"
         }
       ],
       "services": {
