@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "457246676052-57pp7acieg5dabkl76a42sia75b3ostu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harshrimpardal.cseapp",
+            "certificate_hash": "e884809494376e6782273c9739e146bffb61d986"
+          }
+        },
+        {
           "client_id": "457246676052-tmpq1n49nhkaqghuh0bmjjo30hfj4od2.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457246676052-tmpq1n49nhkaqghuh0bmjjo30hfj4od2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
