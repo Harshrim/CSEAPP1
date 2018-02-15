@@ -98,7 +98,7 @@ public class Home extends AppCompatActivity
         }, 2500, 2500);
     }
 
-    //new end
+
 
     @Override
     public void onBackPressed() {
