@@ -2,22 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_cal"
-            android:icon="@drawable/ic_event_available_black_24dp"
-            android:title="Calendar" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_events"
-            android:icon="@drawable/ic_place_black_24dp"
-            android:title="Events" />
+
         <item
             android:id="@+id/nav_assign"
             android:icon="@drawable/ic_import_contacts_black_24dp"
             android:title="Assignments" />
+
+        <item
+            android:id="@+id/nav_cal"
+            android:icon="@drawable/ic_event_available_black_24dp"
+            android:title="Calendar" />
+
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_event_note_black_24px"
+            android:title="Events" />
+
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
 
                 <item
             android:id="@+id/nav_place"
@@ -31,12 +36,12 @@
             <item
                 android:id="@+id/nav_signout"
                 android:icon="@drawable/ic_power_settings_new_black_24dp"
-                android:title="Sign Out" />
+                android:title="Profile" />
 
             <item
                 android:id="@+id/nav_contact"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Contact Us" />
+                android:title="About Us" />
         </menu>
     </item>
 

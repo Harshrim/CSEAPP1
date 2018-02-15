@@ -49,6 +49,7 @@ public class Home extends AppCompatActivity
         firebaseAuth=FirebaseAuth.getInstance();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        if(fab!=null)
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

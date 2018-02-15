@@ -45,8 +45,8 @@
             </LinearLayout>
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="368sp"
+       <!-- <RelativeLayout
+            android:layout_width="386sp"
             android:layout_height="70sp"
             tools:layout_editor_absoluteX="8sp"
             tools:layout_editor_absoluteY="360sp"
@@ -55,6 +55,8 @@
             android:layout_centerHorizontal="true">
 
         </RelativeLayout>
+-->
+
 
     </RelativeLayout>
 

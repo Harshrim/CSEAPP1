@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "457246676052-sjp0h60mlbpalo1nh9mdk0djevi9ild5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harshrimpardal.cseapp",
+            "certificate_hash": "8348b0ccd9eb9d008cd4eccd25830da67e385f0a"
+          }
+        },
+        {
           "client_id": "457246676052-57pp7acieg5dabkl76a42sia75b3ostu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
