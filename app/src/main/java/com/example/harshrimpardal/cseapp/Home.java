@@ -24,6 +24,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 import me.relex.circleindicator.CircleIndicator;
@@ -142,6 +143,7 @@ public class Home extends AppCompatActivity
 
         if (id == R.id.nav_cal) {
             // Handle the calendar action
+            startActivity(new Intent(this,Calendar_Main.class));
 
         } else if (id == R.id.nav_gallery) {
 
@@ -149,6 +151,7 @@ public class Home extends AppCompatActivity
             startActivity(new Intent(this,Events.class));
 
         } else if (id == R.id.nav_assign) {
+            startActivity(new Intent(this,Assignments.class));
 
         } else if (id == R.id.nav_place) {
 

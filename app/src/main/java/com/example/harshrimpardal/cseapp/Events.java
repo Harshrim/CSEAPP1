@@ -23,6 +23,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import static com.example.harshrimpardal.cseapp.R.menu.events;
+
 public class Events extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -39,6 +41,7 @@ public class Events extends AppCompatActivity
         setContentView(R.layout.activity_events);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        firebaseAuth=FirebaseAuth.getInstance();
 
         Firebase.setAndroidContext(this);
         listView=(ListView)findViewById(R.id.events_list);
@@ -66,8 +69,7 @@ public class Events extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(Events.this,Home.class));
             }
         });
 
@@ -94,7 +96,7 @@ public class Events extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.events, menu);
+        getMenuInflater().inflate(events, menu);
         return true;
     }
 
@@ -123,13 +125,15 @@ public class Events extends AppCompatActivity
 
         if (id == R.id.nav_cal) {
             // Handle the calendar action
+            startActivity(new Intent(this,Calendar_Main.class));
 
         } else if (id == R.id.nav_gallery) {
 
         }else if (id == R.id.nav_events) {
-            //startActivity(new Intent(this,Events.class));
+            startActivity(new Intent(this,Events.class));
 
         } else if (id == R.id.nav_assign) {
+            startActivity(new Intent(this,Assignments.class));
 
         } else if (id == R.id.nav_place) {
 
@@ -141,6 +145,7 @@ public class Events extends AppCompatActivity
         } else if (id == R.id.nav_contact) {
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

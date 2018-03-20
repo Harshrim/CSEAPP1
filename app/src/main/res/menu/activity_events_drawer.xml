@@ -3,21 +3,24 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_assign"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
+            android:title="Assignments" />
+
+        <item
             android:id="@+id/nav_cal"
             android:icon="@drawable/ic_event_available_black_24dp"
             android:title="Calendar" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
             android:id="@+id/nav_events"
             android:icon="@drawable/ic_place_black_24dp"
             android:title="Events" />
+
         <item
-            android:id="@+id/nav_assign"
-            android:icon="@drawable/ic_import_contacts_black_24dp"
-            android:title="Assignments" />
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+
 
         <item
             android:id="@+id/nav_place"
@@ -36,7 +39,7 @@
             <item
                 android:id="@+id/nav_contact"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Contact Us" />
+                android:title="About Us" />
         </menu>
     </item>
 

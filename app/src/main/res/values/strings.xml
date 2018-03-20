@@ -8,4 +8,7 @@
     <string name="title_activity_home">Home</string>
     <string name="title_activity_basics">Basics</string>
     <string name="title_activity_events">Events</string>
+    <string name="title_activity_calendar2">Calendar2</string>
+    <string name="title_activity_assignments">Assignments</string>
+    <string name="title_activity_calendar__main">Calendar_Main</string>
 </resources>

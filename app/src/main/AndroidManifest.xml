@@ -35,6 +35,32 @@
             android:name=".Events"
             android:label="@string/title_activity_events"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewUploadsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Events_calendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VTU_calendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondSub"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThirdSub"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Timetable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assignments"
+            android:label="@string/title_activity_assignments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Calendar_Main"
+            android:label="@string/title_activity_calendar__main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
