@@ -1,5 +1,6 @@
 package com.example.harshrimpardal.cseapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -36,7 +37,7 @@ public class PasswordReset extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                startActivity(new Intent(PasswordReset.this,LoginActivity.class));
             }
         });
 

@@ -126,11 +126,7 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            firebaseAuth.signOut();
-            finish();
-            startActivity(new Intent(this,LoginActivity.class));
-        }
+
 
         return super.onOptionsItemSelected(item);
     }
