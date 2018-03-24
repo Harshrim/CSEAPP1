@@ -55,15 +55,13 @@
             android:layout_centerHorizontal="true">
 
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="295sp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="31dp"
-                android:text="@string/vision"
-                android:fontFamily="Times New Roman"
-                android:layout_alignParentEnd="true" />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+            </ScrollView>
         </RelativeLayout>
 
 
