@@ -142,6 +142,7 @@ public class Home extends AppCompatActivity
             startActivity(new Intent(this,Calendar_Main.class));
 
         } else if (id == R.id.nav_gallery) {
+            startActivity(new Intent(this,Gallery.class));
 
         }else if (id == R.id.nav_events) {
             startActivity(new Intent(this,Events.class));

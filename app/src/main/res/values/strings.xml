@@ -12,4 +12,5 @@
     <string name="title_activity_assignments">Assignments</string>
     <string name="title_activity_calendar__main">Calendar</string>
     <string name="title_activity_time_table__list">Time Table</string>
+    <string name="title_activity_gallery">Gallery</string>
 </resources>
